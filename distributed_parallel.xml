@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="DistributedParallel">
+  <test thread-count="2" parallel="tests" name="TestRunner-1">
+    <classes>
+      <class name="com.contact.test.ContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="2" parallel="tests" name="TestRunner-2">
+    <classes>
+      <class name="com.crm.comcast.orgTest.Organization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
